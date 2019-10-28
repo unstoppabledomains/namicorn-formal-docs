@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Ens | namicorn</title>
+	<title>Zns | namicorn</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,41 +56,16 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="ens.html">Ens</a>
+					<a href="zns.html">Zns</a>
 				</li>
 			</ul>
-			<h1>Class Ens</h1>
+			<h1>Class Zns</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Class to support connection with Etherium naming service</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>param</dt>
-						<dd><p>network string such as</p>
-							<ul>
-								<li>mainnet</li>
-								<li>ropsten</li>
-							</ul>
-						</dd>
-						<dt>param</dt>
-						<dd><p>main api url such as</p>
-							<ul>
-								<li><a href="https://mainnet.infura.io">https://mainnet.infura.io</a></li>
-							</ul>
-						</dd>
-						<dt>param</dt>
-						<dd><p>address for a registry contract</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -98,7 +73,7 @@
 						<a href="namingservice.html" class="tsd-signature-type">NamingService</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">Ens</span>
+								<span class="target">Zns</span>
 							</li>
 						</ul>
 					</li>
@@ -111,24 +86,26 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="ens.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="zns.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="ens.html#network" class="tsd-kind-icon">network</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="ens.html#registryaddress" class="tsd-kind-icon">registry<wbr>Address</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="ens.html#url" class="tsd-kind-icon">url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="zns.html#network" class="tsd-kind-icon">network</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="zns.html#registry" class="tsd-kind-icon">registry</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="zns.html#registryaddress" class="tsd-kind-icon">registry<wbr>Address</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="zns.html#url" class="tsd-kind-icon">url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="zns.html#zilliqa" class="tsd-kind-icon">zilliqa</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="ens.html#issupporteddomain" class="tsd-kind-icon">is<wbr>Supported<wbr>Domain</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="ens.html#issupportednetwork" class="tsd-kind-icon">is<wbr>Supported<wbr>Network</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ens.html#resolve" class="tsd-kind-icon">resolve</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ens.html#reverse" class="tsd-kind-icon">reverse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="zns.html#issupporteddomain" class="tsd-kind-icon">is<wbr>Supported<wbr>Domain</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="zns.html#issupportednetwork" class="tsd-kind-icon">is<wbr>Supported<wbr>Network</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="zns.html#resolution" class="tsd-kind-icon">resolution</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="zns.html#resolve" class="tsd-kind-icon">resolve</a></li>
 							</ul>
 						</section>
 					</div>
@@ -140,35 +117,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Ens<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/sourcedefinition.html" class="tsd-signature-type">SourceDefinition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ens.html" class="tsd-signature-type">Ens</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Zns<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/sourcedefinition.html" class="tsd-signature-type">SourceDefinition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="zns.html" class="tsd-signature-type">Zns</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/30a6b0f/src/Ens.ts#L70">Ens.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Zns.ts#L40">Zns.ts:40</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Source object describing the network naming service operates on</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>throws</dt>
-									<dd><p>Unspecified network</p>
-									</dd>
-									<dt>throws</dt>
-									<dd><p>Unspecified url</p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> source: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/sourcedefinition.html" class="tsd-signature-type">SourceDefinition</a><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="ens.html" class="tsd-signature-type">Ens</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="zns.html" class="tsd-signature-type">Zns</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -181,7 +145,17 @@
 					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/30a6b0f/src/Ens.ts#L56">Ens.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Zns.ts#L36">Zns.ts:36</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="registry" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> registry</h3>
+					<div class="tsd-signature tsd-kind-icon">registry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Contract</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Zns.ts#L39">Zns.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -191,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">registry<wbr>Address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/30a6b0f/src/Ens.ts#L58">Ens.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Zns.ts#L38">Zns.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -201,7 +175,17 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/30a6b0f/src/Ens.ts#L57">Ens.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Zns.ts#L37">Zns.ts:37</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="zilliqa" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> zilliqa</h3>
+					<div class="tsd-signature tsd-kind-icon">zilliqa<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Zilliqa</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Zns.ts#L40">Zns.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -219,21 +203,13 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="namingservice.html">NamingService</a>.<a href="namingservice.html#issupporteddomain">isSupportedDomain</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/30a6b0f/src/Ens.ts#L112">Ens.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Zns.ts#L97">Zns.ts:97</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if the domain is in valid format</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>domain: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>domain name to be checked</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -251,15 +227,44 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="namingservice.html">NamingService</a>.<a href="namingservice.html#issupportednetwork">isSupportedNetwork</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/30a6b0f/src/Ens.ts#L122">Ens.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Zns.ts#L101">Zns.ts:101</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="resolution" class="tsd-anchor"></a>
+					<h3>resolution</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">resolution<span class="tsd-signature-symbol">(</span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">__type</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Zns.ts#L88">Zns.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Checks if the current network is supported</p>
+									<p>Resolves a domain</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>domain: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>domain name to be resolved</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">__type</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<ul>
+								<li>Everything what is stored on specified domain</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -273,75 +278,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/30a6b0f/src/Ens.ts#L160">Ens.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Zns.ts#L65">Zns.ts:65</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Resolves the given domain</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>domain: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>domain name to be resolved</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#namicornresolution" class="tsd-signature-type">NamicornResolution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<ul>
-								<li>Returns a promise that resolves in an object</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="reverse" class="tsd-anchor"></a>
-					<h3>reverse</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">reverse<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, currencyTicker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/30a6b0f/src/Ens.ts#L133">Ens.ts:133</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Reverse the ens address to a ens registered domain name</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>address you wish to reverse</p>
-									</div>
-								</li>
-								<li>
-									<h5>currencyTicker: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>currency ticker like BTC, ETH, ZIL</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<ul>
-								<li>domain name attached to this address</li>
-							</ul>
 						</li>
 					</ul>
 				</section>
@@ -357,48 +303,54 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class">
+					<li class=" tsd-kind-class">
 						<a href="ens.html" class="tsd-kind-icon">Ens</a>
-						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="ens.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="ens.html#network" class="tsd-kind-icon">network</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="ens.html#registryaddress" class="tsd-kind-icon">registry<wbr>Address</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="ens.html#url" class="tsd-kind-icon">url</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="ens.html#issupporteddomain" class="tsd-kind-icon">is<wbr>Supported<wbr>Domain</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="ens.html#issupportednetwork" class="tsd-kind-icon">is<wbr>Supported<wbr>Network</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="ens.html#resolve" class="tsd-kind-icon">resolve</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="ens.html#reverse" class="tsd-kind-icon">reverse</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="namicorn.html" class="tsd-kind-icon">Namicorn</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="namingservice.html" class="tsd-kind-icon">Naming<wbr>Service</a>
 					</li>
-					<li class=" tsd-kind-class">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
 						<a href="zns.html" class="tsd-kind-icon">Zns</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="zns.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="zns.html#network" class="tsd-kind-icon">network</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="zns.html#registry" class="tsd-kind-icon">registry</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="zns.html#registryaddress" class="tsd-kind-icon">registry<wbr>Address</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="zns.html#url" class="tsd-kind-icon">url</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="zns.html#zilliqa" class="tsd-kind-icon">zilliqa</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="zns.html#issupporteddomain" class="tsd-kind-icon">is<wbr>Supported<wbr>Domain</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="zns.html#issupportednetwork" class="tsd-kind-icon">is<wbr>Supported<wbr>Network</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="zns.html#resolution" class="tsd-kind-icon">resolution</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="zns.html#resolve" class="tsd-kind-icon">resolve</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/sourcedefinition.html" class="tsd-kind-icon">Source<wbr>Definition</a>
 					</li>
@@ -412,16 +364,25 @@
 						<a href="../globals.html#networkidmap" class="tsd-kind-icon">Network<wbr>IdMap</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#defaultsource" class="tsd-kind-icon">Default<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="../globals.html#mainneturl" class="tsd-kind-icon">Mainnet<wbr>Url</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="../globals.html#zilliqaurl" class="tsd-kind-icon">Zilliqa<wbr>Url</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-not-exported">
+						<a href="../globals.html#urlnetworkmap" class="tsd-kind-icon">Url<wbr>Network<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-not-exported">
 						<a href="../globals.html#isnode" class="tsd-kind-icon">is<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-not-exported">
 						<a href="../globals.html#mockapicalls" class="tsd-kind-icon">mockAPICalls</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-is-not-exported">
+						<a href="../globals.html#urlmap" class="tsd-kind-icon">Url<wbr>Map</a>
 					</li>
 				</ul>
 			</nav>
