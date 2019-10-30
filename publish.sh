@@ -7,6 +7,7 @@ mkdir -p ./docs
 echo $1
 cp -r $1 ./docs
 # // run git commands to push the changes
-echo $PWD
-# git commit -m "$1"
-# git push origin master
+git add .
+git status
+git commit -m "$1"
+git push origin master
