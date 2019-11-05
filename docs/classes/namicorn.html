@@ -100,7 +100,6 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="namicorn.html#api" class="tsd-kind-icon">api</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="namicorn.html#blockchain" class="tsd-kind-icon">blockchain</a></li>
 							</ul>
 						</section>
@@ -108,8 +107,10 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="namicorn.html#address" class="tsd-kind-icon">address</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="namicorn.html#addressorthrow" class="tsd-kind-icon">address<wbr>OrThrow</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="namicorn.html#issupporteddomain" class="tsd-kind-icon">is<wbr>Supported<wbr>Domain</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="namicorn.html#issupporteddomaininnetwork" class="tsd-kind-icon">is<wbr>Supported<wbr>Domain<wbr>InNetwork</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="namicorn.html#namehash" class="tsd-kind-icon">namehash</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="namicorn.html#resolve" class="tsd-kind-icon">resolve</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="namicorn.html#reverse" class="tsd-kind-icon">reverse</a></li>
 							</ul>
@@ -135,7 +136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L50">Namicorn.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L34">namicorn.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,7 +145,7 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>property</dt>
-									<dd><p>{Blockchain} blockchain - main configuration object</p>
+									<dd><p>blockchain - main configuration object</p>
 									</dd>
 								</dl>
 							</div>
@@ -153,9 +154,6 @@
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> __namedParameters: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>api<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-										</li>
 										<li class="tsd-parameter">
 											<h5>blockchain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></h5>
 										</li>
@@ -170,22 +168,12 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="api" class="tsd-anchor"></a>
-					<h3>api</h3>
-					<div class="tsd-signature tsd-kind-icon">api<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L41">Namicorn.ts:41</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="blockchain" class="tsd-anchor"></a>
 					<h3>blockchain</h3>
 					<div class="tsd-signature tsd-kind-icon">blockchain<span class="tsd-signature-symbol">:</span> <a href="../globals.html#blockchain" class="tsd-signature-type">Blockchain</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L42">Namicorn.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L28">namicorn.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,13 +184,13 @@
 					<a name="address" class="tsd-anchor"></a>
 					<h3>address</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">(</span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, currencyTicker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">(</span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, currencyTicker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L105">Namicorn.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L81">namicorn.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -229,10 +217,57 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<ul>
 								<li>A promise that resolves in an address or null</li>
 							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="addressorthrow" class="tsd-anchor"></a>
+					<h3>address<wbr>OrThrow</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">address<wbr>OrThrow<span class="tsd-signature-symbol">(</span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, currencyTicker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L105">namicorn.ts:105</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resolves given domain to a specific currency address or throws an error</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>ResolutionError if address is not found</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>domain: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>domain name</p>
+									</div>
+								</li>
+								<li>
+									<h5>currencyTicker: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>currency ticker such as</p>
+										<ul>
+											<li>ZIL</li>
+											<li>BTC</li>
+											<li>ETH</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -246,7 +281,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L126">Namicorn.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L141">namicorn.ts:141</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -277,7 +312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L138">Namicorn.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L150">namicorn.ts:150</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -299,6 +334,40 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="namehash" class="tsd-anchor"></a>
+					<h3>namehash</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">namehash<span class="tsd-signature-symbol">(</span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L129">namicorn.ts:129</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Produce a namehash from supported naming service</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>domain: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>domain name to be hashed</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<ul>
+								<li>namehash either for ENS or ZNS</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="resolve" class="tsd-anchor"></a>
 					<h3>resolve</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
@@ -308,7 +377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L87">Namicorn.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L68">namicorn.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -346,7 +415,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L117">Namicorn.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L120">namicorn.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,7 +458,7 @@
 					<div class="tsd-signature tsd-kind-icon">UNCLAIMED_<wbr>DOMAIN_<wbr>RESPONSE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L32">Namicorn.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L19">namicorn.ts:19</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -398,7 +467,7 @@
 						<div class="tsd-signature tsd-kind-icon">addresses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L33">Namicorn.ts:33</a></li>
+								<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L20">namicorn.ts:20</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-type-declaration">
@@ -413,7 +482,7 @@
 						<div class="tsd-signature tsd-kind-icon">meta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L34">Namicorn.ts:34</a></li>
+								<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L21">namicorn.ts:21</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -422,7 +491,7 @@
 							<div class="tsd-signature tsd-kind-icon">owner<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L35">Namicorn.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L22">namicorn.ts:22</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -432,7 +501,7 @@
 							<div class="tsd-signature tsd-kind-icon">ttl<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L37">Namicorn.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L24">namicorn.ts:24</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -442,7 +511,7 @@
 							<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/56ae9a2/src/Namicorn.ts#L36">Namicorn.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/unstoppabledomains/namicorn/blob/5d9ac55/src/namicorn.ts#L23">namicorn.ts:23</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -472,19 +541,22 @@
 								<a href="namicorn.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-								<a href="namicorn.html#api" class="tsd-kind-icon">api</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="namicorn.html#blockchain" class="tsd-kind-icon">blockchain</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="namicorn.html#address" class="tsd-kind-icon">address</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="namicorn.html#addressorthrow" class="tsd-kind-icon">address<wbr>OrThrow</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="namicorn.html#issupporteddomain" class="tsd-kind-icon">is<wbr>Supported<wbr>Domain</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="namicorn.html#issupporteddomaininnetwork" class="tsd-kind-icon">is<wbr>Supported<wbr>Domain<wbr>InNetwork</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="namicorn.html#namehash" class="tsd-kind-icon">namehash</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="namicorn.html#resolve" class="tsd-kind-icon">resolve</a>
@@ -503,40 +575,79 @@
 						<a href="namingservice.html" class="tsd-kind-icon">Naming<wbr>Service</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="resolutionerror.html" class="tsd-kind-icon">Resolution<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="udapi.html" class="tsd-kind-icon">Udapi</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="zns.html" class="tsd-kind-icon">Zns</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/sourcedefinition.html" class="tsd-kind-icon">Source<wbr>Definition</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#bip44constants" class="tsd-kind-icon">Bip44<wbr>Constants</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#blockchain" class="tsd-kind-icon">Blockchain</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#dictionary" class="tsd-kind-icon">Dictionary</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="../globals.html#errorcode" class="tsd-kind-icon">Error<wbr>Code</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#namicornresolution" class="tsd-kind-icon">Namicorn<wbr>Resolution</a>
 					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#networkidmap" class="tsd-kind-icon">Network<wbr>IdMap</a>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="../globals.html#resolutionerrorhandler" class="tsd-kind-icon">Resolution<wbr>Error<wbr>Handler</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#defaultsource" class="tsd-kind-icon">Default<wbr>Source</a>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="../globals.html#resolutionerroroptions" class="tsd-kind-icon">Resolution<wbr>Error<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#resolvercontract" class="tsd-kind-icon">Resolver<wbr>Contract</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#znsresolution" class="tsd-kind-icon">Zns<wbr>Resolution</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#owner" class="tsd-kind-icon">owner</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#ttl" class="tsd-kind-icon">ttl</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#ethcoinindex" class="tsd-kind-icon">Eth<wbr>Coin<wbr>Index</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="../globals.html#mainneturl" class="tsd-kind-icon">Mainnet<wbr>Url</a>
 					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#nulladdress" class="tsd-kind-icon">Null<wbr>Address</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="../globals.html#zilliqaurl" class="tsd-kind-icon">Zilliqa<wbr>Url</a>
 					</li>
-					<li class=" tsd-kind-function tsd-is-not-exported">
-						<a href="../globals.html#urlnetworkmap" class="tsd-kind-icon">Url<wbr>Network<wbr>Map</a>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#newresolveraddress" class="tsd-kind-icon">new<wbr>Resolver<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#oldresolveraddress" class="tsd-kind-icon">old<wbr>Resolver<wbr>Address</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-not-exported">
-						<a href="../globals.html#isnode" class="tsd-kind-icon">is<wbr>Node</a>
+						<a href="../globals.html#expectresolutionerrorcode" class="tsd-kind-icon">expect<wbr>Resolution<wbr>Error<wbr>Code</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-not-exported">
+						<a href="../globals.html#expectspytobecalled" class="tsd-kind-icon">expect<wbr>Spy<wbr>ToBe<wbr>Called</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-not-exported">
 						<a href="../globals.html#mockapicalls" class="tsd-kind-icon">mockAPICalls</a>
 					</li>
-					<li class=" tsd-kind-object-literal tsd-is-not-exported">
-						<a href="../globals.html#urlmap" class="tsd-kind-icon">Url<wbr>Map</a>
+					<li class=" tsd-kind-function tsd-is-not-exported">
+						<a href="../globals.html#mockasyncmethod" class="tsd-kind-icon">mock<wbr>Async<wbr>Method</a>
 					</li>
 				</ul>
 			</nav>
