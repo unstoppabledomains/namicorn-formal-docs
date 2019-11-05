@@ -1,12 +1,18 @@
+#!/bin/bash
 VERSION=$1
-DOCS_PATH="./namicorn-formal-docs"
-PUBLISH_FOLDER="$DOCS_PATH/docs"
-rm -rf "$DOCS_PATH/*"
-# // Copy eveything from $1 to /docs
-mkdir -p $DOCS_PATH
-cp -r $DOCS_PATH $PUBLISH_FOLDER
-# // run git commands to push the changes
-git add $VERSION
+FORMALDOCS="${PWD}/formal-docs"
+DOCPATH="${FORMALDOCS}/docs"
+NEW_DOCS="${FORMALDOCS}/${VERSION}"
+echo $VERSION
+echo $DOCPATH
+echo $NEW_DOCS
+# #Delete old docs 
+rm -rf "${DOCPATH}"
+# #Recreate docs folder with new data
+mkdir $DOCPATH
+cp -r "${NEW_DOCS}/." "${DOCPATH}/"
+# #Push updates to github
+cd ${FORMALDOCS}
+echo $PWD
+git add .
 git status
-git commit -m "$VERSION"
-git push origin master
